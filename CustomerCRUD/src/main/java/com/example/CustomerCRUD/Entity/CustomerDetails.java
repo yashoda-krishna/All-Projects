@@ -6,8 +6,9 @@ import jakarta.persistence.*;
 import lombok.*;
 
     @Entity
-    @Getter @Setter
+
     @NoArgsConstructor @AllArgsConstructor
+    @Data
     public class CustomerDetails {
 
         @Id

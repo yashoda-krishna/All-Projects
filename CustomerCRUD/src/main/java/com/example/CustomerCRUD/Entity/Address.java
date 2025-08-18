@@ -5,20 +5,21 @@ package com.example.CustomerCRUD.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-    @Entity
-    @Getter @Setter
-    @NoArgsConstructor @AllArgsConstructor
-    public class Address {
+@Entity
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long id;
+@NoArgsConstructor @AllArgsConstructor
+@Data
+public class Address {
 
-        private String street;
-        private String city;
-        private String state;
-        private String zipCode;
-        private String country;
-    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String street;
+    private String city;
+    private String state;
+    private String zipCode;
+    private String country;
+}
 
 
